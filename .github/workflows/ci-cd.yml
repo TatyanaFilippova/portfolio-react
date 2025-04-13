@@ -3,7 +3,7 @@ name: Deploy Create React App
 on:
   push:
     branches:
-      - main  # Укажите ветку, на которую будет происходить пуш
+      - master # Укажите ветку, на которую будет происходить пуш
 
 jobs:
   build:
@@ -16,13 +16,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20'  # Укажите нужную версию Node.js
+          node-version: "20" # Укажите нужную версию Node.js
 
       - name: Install dependencies
         run: npm install
 
       - name: Build the project
-        run: npm run build  # Сборка приложения
+        run: npm run build # Сборка приложения
 
       - name: Archive build artifacts
         run: |
@@ -37,7 +37,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    needs: build  # Зависимость от job'а сборки
+    needs: build # Зависимость от job'а сборки
 
     steps:
       - name: Download build artifacts
@@ -47,7 +47,7 @@ jobs:
           path: artifacts/
 
       - name: Install sshpass
-        run: sudo apt-get install -y sshpass  # Установка sshpass для использования пароля
+        run: sudo apt-get install -y sshpass # Установка sshpass для использования пароля
 
       - name: Add server to known_hosts
         run: |
@@ -56,12 +56,12 @@ jobs:
 
       - name: Copy files to server via SSH
         env:
-          SERVER_USER: ${{ secrets.SERVER_USER }}       # Имя пользователя для SSH
-          SERVER_IP: ${{ secrets.SERVER_IP }}           # IP-адрес сервера
-          SERVER_PATH: ${{ secrets.SERVER_PATH }}       # Путь на сервере, куда будут копироваться файлы
+          SERVER_USER: ${{ secrets.SERVER_USER }} # Имя пользователя для SSH
+          SERVER_IP: ${{ secrets.SERVER_IP }} # IP-адрес сервера
+          SERVER_PATH: ${{ secrets.SERVER_PATH }} # Путь на сервере, куда будут копироваться файлы
           SERVER_PASSWORD: ${{ secrets.PASSWORD }} # Пароль для SSH
         run: |
           sshpass -p "$SERVER_PASSWORD" rsync -avz --delete ./artifacts/ $SERVER_USER@$SERVER_IP:$SERVER_PATH
 
       - name: Clean up after deployment
-        run: echo "Deployment completed successfully!"  # Сообщение о завершении развертывания
+        run: echo "Deployment completed successfully!" # Сообщение о завершении развертывания
