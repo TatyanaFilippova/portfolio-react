@@ -11,7 +11,7 @@ const Header = () => {
         <div className="box5"></div>
         <h1 className="header__title">
           <strong>
-            Hi, my name is <em>Tanya!!!</em>
+            Hi, my name is <em>Tanya</em>
           </strong>
           <br />a frontend developer
         </h1>
