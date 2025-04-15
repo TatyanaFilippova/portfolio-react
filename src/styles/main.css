@@ -120,8 +120,9 @@ body {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 30px;
+  /*column-gap: 30px;*/
   row-gap: 30px;
+  justify-content: space-between;
 }
 
 
