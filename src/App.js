@@ -2,15 +2,22 @@ import "./styles/main.css";
 import NavBar from "./components/navBar/NavBar";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/Home";
-// import Skills from "./pages/Skills";
+import ProjectsDetailed from "./pages/ProjectsDetailed";
+import { BrowserRouter, Route, Routes } from "react-router";
+import Skills from "./pages/Skills";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Home />
-      {/*<Skills />*/}
-      <Footer />
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/projects" element={<ProjectsDetailed />} />
+          <Route path="/skills" element={<Skills />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
