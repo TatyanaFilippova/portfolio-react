@@ -1,9 +1,12 @@
 .project {
-  width: 32%;
+  width: 32% ;
   background-color: var(--white);
   box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  height: 400px;
+  height: 350px;
+}
+.project_shell {
+  width: 100%;
 }
 
 .project__img {
@@ -29,7 +32,7 @@
   width: 150px;
   height: 14px;
   transform: skew(-12deg) translateX(-50%);
-  background:  var(--accent);
+  background: var(--accent);
   opacity: 0.3;
   z-index: 1;
 }

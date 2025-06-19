@@ -9,12 +9,14 @@ const Home = () => {
       <main className="section">
         <div className="container" id="section1">
           <h2 className="title-1">Projects</h2>
+
           <ul className="projects">
-            {projectsList.map((project) => (
+            {projectsList.map((project, index) => (
               <Project
                 key={project.title}
                 title={project.title}
                 img={project.img}
+                index={index}
               />
             ))}
           </ul>

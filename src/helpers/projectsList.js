@@ -13,7 +13,7 @@ export const projectsList = [
     title: "Weather-forecast",
     img: weather,
     skills: "Skills: React, Node.js",
-    gitHubLink: "https://github.com/TatyanaFilippova/ weather-forecast-react",
+    gitHubLink: "https://github.com/TatyanaFilippova/weather-forecast-react",
   },
   {
     title: "Todo-list",

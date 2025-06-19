@@ -1,7 +1,7 @@
 import moon from "../../img/icons/moon.svg";
 import sun from "../../img/icons/sun.svg";
 import "./style.css";
-import {NavLink, useLocation} from "react-router";
+import {Link, NavLink, useLocation} from "react-router";
 import {useEffect} from "react";
 
 const NavBar = () => {
@@ -20,9 +20,9 @@ const NavBar = () => {
     <nav className="nav">
       <div className="container">
         <div className="nav-row">
-          <NavLink to="/" className="logo">
+          <Link to="/" className="logo">
             Portfolio
-          </NavLink>
+          </Link>
           <button className="dark-mode-btn dark-mode-btn--active">
             <img src={moon} alt="Light mode" className="dark-mode-btn-icon" />
             <img src={sun} alt="Dark mode" className="dark-mode-btn-icon" />
@@ -31,7 +31,7 @@ const NavBar = () => {
             <li className="nav-list__item">
               <NavLink
                 to="/#section1"
-                className="nav-list__link nav-list__link--active"
+                className="nav-list__link"
               >
 
                 Projects
