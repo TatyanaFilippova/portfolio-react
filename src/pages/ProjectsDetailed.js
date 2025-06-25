@@ -6,13 +6,13 @@ import { EmblaCarousel } from "../components/imageSlider/ImageSlider";
 const ProjectsDetailed = () => {
   const { id } = useParams();
   const project = projectsList[id];
+
   return (
     <main className="section">
       <div>
         <div className="project-details">
           <h1 className="title-1">{project.title}</h1>
-
-          <EmblaCarousel />
+          <EmblaCarousel imgList={project.imgList} />
           <div className="project-details__desc">
             <p> {project.skills}</p>
           </div>
