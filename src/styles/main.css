@@ -24,6 +24,9 @@ font-style: normal;
   --header-text: var(--white);
   --accent: var(--blue);
 }
+* {
+  box-sizing: border-box;
+}
 
 html,
 body {
@@ -99,9 +102,7 @@ body {
   flex-wrap: wrap;
   gap: 2%;
   row-gap: 24px;
-
 }
-
 
 /* Project details */
 
