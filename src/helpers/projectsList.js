@@ -21,10 +21,12 @@ export const projectsList = [
     skills: "Skills: React",
     gitHubLink: "https://github.com/TatyanaFilippova/todo-list",
   },
-    {
-        title: "Todo-list",
-        img: todoList,
-        skills: "Skills: React",
-        gitHubLink: "https://github.com/TatyanaFilippova/todo-list",
-    },
+  {
+    title: "Todo-list",
+    img: todoList,
+    skills: "Skills: React",
+    gitHubLink: "https://github.com/TatyanaFilippova/todo-list",
+  },
 ];
+
+

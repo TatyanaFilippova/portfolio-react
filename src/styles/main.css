@@ -106,7 +106,7 @@ body {
 /* Project details */
 
 .project-details {
-  max-width: 865px;
+  /*max-width: 865px;*/
   margin: 0 auto;
   text-align: center;
   display: flex;
