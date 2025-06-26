@@ -12,7 +12,7 @@ const ProjectsDetailed = () => {
       <div>
         <div className="project-details">
           <h1 className="title-1">{project.title}</h1>
-          <EmblaCarousel imgList={project.imgList} />
+          <EmblaCarousel imgList={project.imgList ?? [project.img]} />
           <div className="project-details__desc">
             <p> {project.skills}</p>
           </div>

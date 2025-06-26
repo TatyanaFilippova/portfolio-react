@@ -104,6 +104,11 @@ body {
   row-gap: 24px;
 }
 
+.project-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  width: 32% ;}
+
 /* Project details */
 
 .project-details {

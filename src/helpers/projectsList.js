@@ -5,31 +5,40 @@ import img2 from "../img/projects/magicVineShop/img2.jpg";
 import img3 from "../img/projects/magicVineShop/img3.jpg";
 import img4 from "../img/projects/magicVineShop/img4.jpg";
 import magicVineShop from "../img/projects/magicVineShop/magicVineShop.jpg";
+import facadySysoly from "../img/projects/facadySysoly/facadySysoly.png";
+import toDoList2 from "../img/projects/toDoList2/toDoList2.png"
 
 export const projectsList = [
   {
-    title: "Magic-vine-shop",
+    title: "Magic vine shop",
     img: magicVineShop,
     skills: "Skills: React, Node.js",
     gitHubLink: "https://github.com/TatyanaFilippova/Magic-vine-shop",
     imgList: [img4, img2, img3, img1],
   },
   {
-    title: "Weather-forecast",
+    title: "Weather forecast",
     img: weather,
     skills: "Skills: React, Node.js",
     gitHubLink: "https://github.com/TatyanaFilippova/weather-forecast-react",
   },
   {
-    title: "Todo-list",
+    title: "To-do list",
     img: todoList,
     skills: "Skills: React",
     gitHubLink: "https://github.com/TatyanaFilippova/todo-list",
   },
   {
-    title: "Todo-list",
-    img: todoList,
+    title: "Fasady sysoly" ,
+    img: facadySysoly,
     skills: "Skills: React",
-    gitHubLink: "https://github.com/TatyanaFilippova/todo-list",
+    gitHubLink: "https://github.com/TatyanaFilippova/fasady-sysoly",
   },
+  {
+    title: "To-do list-2" ,
+    img: toDoList2,
+    skills: "Skills: React",
+    gitHubLink: "https://github.com/TatyanaFilippova/homework-2-lad-academy",
+  },
+
 ];
