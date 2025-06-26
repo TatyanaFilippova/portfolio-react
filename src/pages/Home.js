@@ -1,7 +1,7 @@
 import Header from "../components/header/Header";
 import Project from "../components/project/Project";
 import { projectsList } from "../helpers/projectsList";
-import { motion } from "motion/react";
+import { Fade } from "react-awesome-reveal";
 
 const Home = () => {
   return (
@@ -14,17 +14,14 @@ const Home = () => {
             <ul className="projects">
               {projectsList.map((project, index) => (
                 <div className="project-wrapper">
-                  <motion.li
-                    initial={{ opacity: 0, scale: 0 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                  >
+                  <Fade cascade delay={index * 500} style={{ width: "100%" }} triggerOnce>
                     <Project
                       key={project.title}
                       title={project.title}
                       img={project.img}
                       index={index}
                     />
-                  </motion.li>
+                  </Fade>
                 </div>
               ))}
             </ul>
