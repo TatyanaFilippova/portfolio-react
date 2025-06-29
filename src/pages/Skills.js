@@ -9,7 +9,7 @@ const Skills = () => {
             <h2 className="title-2">Frontend</h2>
             <p>
               JavaScript, HTML, CSS, React, TypeScript, Node.js, Веб-разработка,
-              Кроссбраузерная верстка, Twitter Bootstrap, SCSS, Redux
+              Кроссбраузерная верстка, Twitter Bootstrap, SCSS, Redux, Styled components
             </p>
           </li>
         </ul>

@@ -28,7 +28,7 @@ export const projectsList = [
   {
     title: "Magic vine shop",
     img: magicVineShop,
-    skills: "Skills: React, Node.js",
+    skills: "Skills: React, Next.js, React Query, Styled components, Motion",
     gitHubLink: "https://github.com/TatyanaFilippova/Magic-vine-shop",
     imgList: [
       img1_magicVineShop,
@@ -40,7 +40,7 @@ export const projectsList = [
   {
     title: "Weather forecast",
     img: weather,
-    skills: "Skills: React, Node.js",
+    skills: "Skills: React, Redux, SASS",
     gitHubLink: "https://github.com/TatyanaFilippova/weather-forecast-react",
     imgList: [
       img1_weather,
@@ -65,7 +65,7 @@ export const projectsList = [
   {
     title: "Fasady sysoly",
     img: facadySysoly,
-    skills: "Skills: React",
+    skills: "Skills: React, Next.js, Styled components",
     gitHubLink: "https://github.com/TatyanaFilippova/fasady-sysoly",
     imgList: [
       img1_fasady,

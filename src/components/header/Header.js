@@ -1,4 +1,5 @@
 import "./style.css";
+import tatyana_salyt from "../../files/tatyana_salyt.pdf";
 
 const Header = () => {
   return (
@@ -15,7 +16,7 @@ const Header = () => {
           </strong>
           <br />a frontend developer
         </h1>
-        <a href="#!" className="btn">
+        <a href={tatyana_salyt} download="tatiana_filippova.pdf" className="btn">
           Download CV
         </a>
       </div>

@@ -49,6 +49,7 @@
   top: 0;
   transform: rotate(45deg);
   animation: example 4s linear;
+  pointer-events: none;
 }
 
 .box2 {
