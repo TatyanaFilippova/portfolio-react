@@ -14,7 +14,12 @@ const Home = () => {
             <ul className="projects">
               {projectsList.map((project, index) => (
                 <div className="project-wrapper">
-                  <Fade cascade delay={index * 500} style={{ width: "100%" }} triggerOnce>
+                  <Fade
+                    cascade
+                    delay={index * 500}
+                    style={{ width: "100%" }}
+                    triggerOnce
+                  >
                     <Project
                       key={project.title}
                       title={project.title}

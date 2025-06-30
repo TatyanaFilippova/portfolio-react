@@ -1,8 +1,8 @@
 import moon from "../../img/icons/moon.svg";
 import sun from "../../img/icons/sun.svg";
 import "./style.css";
-import {Link, NavLink, useLocation} from "react-router";
-import {useEffect} from "react";
+import { Link, NavLink, useLocation } from "react-router";
+import { useEffect } from "react";
 
 const NavBar = () => {
   const location = useLocation();
@@ -10,10 +10,10 @@ const NavBar = () => {
     if (location.hash) {
       const element = document.getElementById(location.hash.slice(1));
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [location]);
   return (
@@ -29,11 +29,7 @@ const NavBar = () => {
           </button>
           <ul className="nav-list">
             <li className="nav-list__item">
-              <NavLink
-                to="/#section1"
-                className="nav-list__link"
-              >
-
+              <NavLink to="/#section1" className="nav-list__link">
                 Projects
               </NavLink>
             </li>

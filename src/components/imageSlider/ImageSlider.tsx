@@ -2,7 +2,11 @@ import React, { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import "./style.css";
 
-export function EmblaCarousel({ imgList }) {
+interface IProps {
+  imgList: string[];
+}
+
+export function EmblaCarousel({ imgList }: IProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel();
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -15,7 +19,7 @@ export function EmblaCarousel({ imgList }) {
     <div className="wrapper__slider">
       <div className="embla" ref={emblaRef}>
         <div className="embla__container">
-          {imgList.map((img) => (
+          {imgList.map((img: string) => (
             <div className="embla__slide" key={img}>
               <img src={img} className="slide_img" alt="слайд" />
             </div>

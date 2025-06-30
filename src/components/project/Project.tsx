@@ -1,7 +1,13 @@
 import "./style.css";
 import { NavLink } from "react-router";
 
-const Project = ({ title, img, index }) => {
+interface ProjectProps {
+  title: string;
+  img: string;
+  index: number;
+}
+
+const Project = ({ title, img, index }: ProjectProps) => {
   return (
     <NavLink to={`/projects/${index}`} className="project">
       <div className="wrapper">

@@ -5,7 +5,7 @@ import { EmblaCarousel } from "../components/imageSlider/ImageSlider";
 
 const ProjectsDetailed = () => {
   const { id } = useParams();
-  const project = projectsList[id];
+  const project = projectsList[id as unknown as number];
 
   return (
     <main className="section">
