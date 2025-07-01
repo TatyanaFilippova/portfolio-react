@@ -1,5 +1,5 @@
-import "./style.css";
 import { NavLink } from "react-router";
+import "./style.css";
 
 interface ProjectProps {
   title: string;

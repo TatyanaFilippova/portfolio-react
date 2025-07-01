@@ -1,8 +1,8 @@
-import moon from "../../img/icons/moon.svg";
-import sun from "../../img/icons/sun.svg";
-import "./style.css";
 import { Link, NavLink, useLocation } from "react-router";
 import { useEffect } from "react";
+import BtnDarkMode from "../btnDarkMode/BtnDarkMode";
+import "./style.css";
+
 
 const NavBar = () => {
   const location = useLocation();
@@ -18,15 +18,12 @@ const NavBar = () => {
   }, [location]);
   return (
     <nav className="nav">
-      <div className="container">
+      <div className="container_navBar">
         <div className="nav-row">
           <Link to="/" className="logo">
             Portfolio
           </Link>
-          <button className="dark-mode-btn dark-mode-btn--active">
-            <img src={moon} alt="Light mode" className="dark-mode-btn-icon" />
-            <img src={sun} alt="Dark mode" className="dark-mode-btn-icon" />
-          </button>
+          <BtnDarkMode />
           <ul className="nav-list">
             <li className="nav-list__item">
               <NavLink to="/#section1" className="nav-list__link">

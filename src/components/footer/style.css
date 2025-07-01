@@ -3,6 +3,7 @@
   padding: 60px 0 50px;
   color: var(--header-text);
   margin-top: auto;
+  border-top: 1px solid var(--dark-border);
 }
 
 .footer__wrapper {
@@ -23,4 +24,10 @@
 }
 .copyright p + p {
   margin-top: 0.5em;
+}
+
+.container_footer {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
 }

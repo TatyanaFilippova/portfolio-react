@@ -8,7 +8,6 @@
 
 a.active {
   border-bottom: 2px solid var(--accent);
-
 }
 
 .nav-row {
@@ -18,7 +17,12 @@ a.active {
   column-gap: 30px;
   row-gap: 20px;
   flex-wrap: wrap;
+}
 
+.container_navBar {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
 }
 
 .logo {
@@ -27,7 +31,6 @@ a.active {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin-right: auto;
-
 }
 
 .nav-list {
@@ -35,7 +38,6 @@ a.active {
   align-items: center;
   column-gap: 40px;
   font-size: 16px;
-
   font-family: "Poppins", sans-serif;
 }
 
