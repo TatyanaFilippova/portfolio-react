@@ -100,6 +100,11 @@ body {
   top: 1px;
 }
 
+.btn-wrapper{
+  display: flex;
+  gap: 40px;
+}
+
 /* General */
 
 .section {

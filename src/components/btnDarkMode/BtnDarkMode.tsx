@@ -23,12 +23,10 @@ const BtnDarkMode = () => {
     });
   };
   return (
-    <>
-      <button ref={btnRef} className="dark-mode-btn" onClick={toggleDarkMode}>
-        <img src={sun} alt="Dark mode" className="dark-mode-btn-icon" />
-        <img src={moon} alt="Light mode" className="dark-mode-btn-icon" />
-      </button>
-    </>
+    <button ref={btnRef} className="dark-mode-btn" onClick={toggleDarkMode}>
+      <img src={sun} alt="Dark mode" className="dark-mode-btn-icon" />
+      <img src={moon} alt="Light mode" className="dark-mode-btn-icon" />
+    </button>
   );
 };
 

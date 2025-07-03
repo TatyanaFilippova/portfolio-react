@@ -2,6 +2,7 @@ import BtnGitHub from "../components/btnGitHub/BtnGitHub";
 import { useParams } from "react-router";
 import { projectsList } from "../helpers/projectsList";
 import { EmblaCarousel } from "../components/imageSlider/ImageSlider";
+import BtnPublishedSite from "../components/btnPublishedSite/btnPublishedSite";
 
 const ProjectsDetailed = () => {
   const { id } = useParams();
@@ -16,7 +17,10 @@ const ProjectsDetailed = () => {
           <div className="project-details__desc">
             <p> {project.skills}</p>
           </div>
-          <BtnGitHub link={project.gitHubLink} />
+          <div className="btn-wrapper">
+            <BtnGitHub link={project.gitHubLink} />
+            {project.link && <BtnPublishedSite link={project.link} />}
+          </div>
         </div>
       </div>
     </main>

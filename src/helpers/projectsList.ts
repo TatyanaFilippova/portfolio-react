@@ -36,6 +36,7 @@ export const projectsList = [
       img3_magicVineShop,
       img4_magicVineShop,
     ],
+    link: "https://magic-vine.unclespace.ru/",
   },
   {
     title: "Weather forecast",
@@ -49,19 +50,9 @@ export const projectsList = [
       img4_weather,
       img5_weather,
     ],
+    link: "https://genshin.unclespace.ru/",
   },
-  {
-    title: "To-do list",
-    img: todoList,
-    skills: "Skills: React",
-    gitHubLink: "https://github.com/TatyanaFilippova/todo-list",
-    imgList: [
-      img1_toDoList_1,
-      img2_toDoList_1,
-      img3_toDoList_1,
-      img4_toDoList_1,
-    ],
-  },
+
   {
     title: "Fasady sysoly",
     img: facadySysoly,
@@ -75,6 +66,20 @@ export const projectsList = [
       img5_fasady,
       img6_fasady,
     ],
+    link: "https://fasady-sysoly-delta.vercel.app/",
+  },
+  {
+    title: "To-do list",
+    img: todoList,
+    skills: "Skills: React",
+    gitHubLink: "https://github.com/TatyanaFilippova/todo-list",
+    imgList: [
+      img1_toDoList_1,
+      img2_toDoList_1,
+      img3_toDoList_1,
+      img4_toDoList_1,
+    ],
+    link: "",
   },
   {
     title: "To-do list 2",
@@ -82,5 +87,6 @@ export const projectsList = [
     skills: "Skills: React",
     gitHubLink: "https://github.com/TatyanaFilippova/homework-2-lad-academy",
     imgList: [img1_toDoList_2],
+    link: "",
   },
 ];

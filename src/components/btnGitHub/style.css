@@ -9,6 +9,8 @@
   align-items: center;
   transition: opacity 0.2s ease;
   background-color: white;
+  width: 190px;
+  justify-content: center;
 }
 
 .btn-outline:hover {
