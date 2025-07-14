@@ -23,6 +23,10 @@ import img4_fasady from "../img/projects/facadySysoly/img4.png";
 import img5_fasady from "../img/projects/facadySysoly/img5.png";
 import img6_fasady from "../img/projects/facadySysoly/img6.png";
 import img1_toDoList_2 from "../img/projects/toDoList_2/img1.png";
+import well from "../img/projects/well/well.png";
+import img1_well from "../img/projects/well/img1_well.png";
+import img2_well from "../img/projects/well/img2_well.png";
+import img3_well from "../img/projects/well/img3_well.png";
 
 export const projectsList = [
   {
@@ -87,6 +91,14 @@ export const projectsList = [
     skills: "Skills: React",
     gitHubLink: "https://github.com/TatyanaFilippova/homework-2-lad-academy",
     imgList: [img1_toDoList_2],
+    link: "",
+  },
+  {
+    title: "Converter currency",
+    img: well,
+    skills: "Skills: React",
+    gitHubLink: "https://github.com/TatyanaFilippova/converter-currency",
+    imgList: [img1_well, img2_well, img3_well],
     link: "",
   },
 ];
