@@ -1,6 +1,6 @@
 .header {
   min-height: 695px;
-  background-color: var(--dark-bg);
+  /*background-color: var(--dark-bg);*/
   color: var(--header-text);
   padding: 40px 0;
   display: flex;
@@ -76,4 +76,14 @@
   70% {
     transform: rotate(30deg);
   }
+}
+
+.header_video {
+  position: absolute;
+  height: 695px;
+  width: 100%;
+  object-fit: cover;
+  border-bottom: 1px solid var(--dark-border);
+  border-bottom-right-radius: 100px;
+
 }

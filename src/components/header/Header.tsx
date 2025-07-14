@@ -1,9 +1,13 @@
 import "./style.css";
 import tatyana_salyt from "../../files/tatyana_salyt.pdf";
+import code from "../../video/code.mp4";
 
 const Header = () => {
   return (
     <header className="header">
+      <video className="header_video" autoPlay muted loop>
+        <source src={code} type="video/mp4" />
+      </video>
       <div className="header_wrapper">
         <div className="box"></div>
         <div className="box2"></div>
