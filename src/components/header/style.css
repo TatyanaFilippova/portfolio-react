@@ -70,10 +70,10 @@
   pointer-events: none;
 
   @media (max-width: 600px) {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     top: calc(50% - 65px);
-  }
+      }
 }
 
 .box2 {
