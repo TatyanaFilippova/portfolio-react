@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import BtnDarkMode from "../btnDarkMode/BtnDarkMode";
 import "./style.css";
 
-
 const NavBar = () => {
   const location = useLocation();
   useEffect(() => {
@@ -16,6 +15,7 @@ const NavBar = () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [location]);
+
   return (
     <nav className="nav">
       <div className="container_navBar">

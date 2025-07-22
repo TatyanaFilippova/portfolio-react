@@ -85,5 +85,6 @@
   object-fit: cover;
   border-bottom: 1px solid var(--dark-border);
   border-bottom-right-radius: 100px;
+  background-color: #272626;
 
 }
