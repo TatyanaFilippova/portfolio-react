@@ -37,7 +37,6 @@
 
   @media (max-width: 600px) {
     font-size: 30px;
-    margin-top: 100px;
   }
 }
 
@@ -72,8 +71,8 @@
   pointer-events: none;
 
   @media (max-width: 600px) {
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
     top: calc(50% - 65px);
     right: 60px;
       }
