@@ -22,9 +22,7 @@
   height: 400px;
   align-items: center;
 
-  @media (max-width: 600px) {
-    padding: 150px 15px 0 15px;
-  }
+
 }
 
 .header__title {
