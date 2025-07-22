@@ -187,10 +187,9 @@ body {
   }
 }
 
-.project-details__wrapper{
-
+.project-details__wrapper {
   @media (max-width: 600px) {
-    padding: 0 15px ;
+    padding: 0 15px;
   }
 }
 
