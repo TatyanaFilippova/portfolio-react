@@ -14,12 +14,14 @@ const ProjectsDetailed = () => {
         <div className="project-details">
           <h1 className="title-1">{project.title}</h1>
           <EmblaCarousel imgList={project.imgList ?? [project.img]} />
-          <div className="project-details__desc">
-            <p> {project.skills}</p>
-          </div>
-          <div className="btn-wrapper">
-            <BtnGitHub link={project.gitHubLink} />
-            {project.link && <BtnPublishedSite link={project.link} />}
+          <div className="project-details__wrapper">
+            <div className="project-details__desc">
+              <p> {project.skills}</p>
+            </div>
+            <div className="btn-wrapper">
+              <BtnGitHub link={project.gitHubLink} />
+              {project.link && <BtnPublishedSite link={project.link} />}
+            </div>
           </div>
         </div>
       </div>
