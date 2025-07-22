@@ -11,6 +11,11 @@
   background-color: white;
   width: 190px;
   justify-content: center;
+
+  @media (max-width: 600px) {
+    width: 170px;
+    padding: 0;
+  }
 }
 
 .btn-outline:hover {
