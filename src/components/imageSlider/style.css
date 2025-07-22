@@ -32,7 +32,7 @@
   border-radius: 10px;
 
   @media (max-width: 600px) {
-    height: 500px;
+    height: 450px;
   }
 }
 
@@ -61,7 +61,7 @@
   @media (max-width: 600px) {
     width: calc(50% - 10px);
     height: 50px;
-    top: 90%;
+    top: 89%;
     border-radius: 0;
 
   }
