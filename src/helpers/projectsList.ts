@@ -27,6 +27,11 @@ import well from "../img/projects/well/well.png";
 import img1_well from "../img/projects/well/img1_well.png";
 import img2_well from "../img/projects/well/img2_well.png";
 import img3_well from "../img/projects/well/img3_well.png";
+import eva_komi from "../img/projects/eva-komi/eva_komi.png";
+import img1_eva from "../img/projects/eva-komi/img1_eva.png";
+import img2_eva from "../img/projects/eva-komi/img2_eva.png";
+import img3_eva from "../img/projects/eva-komi/img3_eva.png";
+import img4_eva from "../img/projects/eva-komi/img4_eva.png";
 
 export const projectsList = [
   {
@@ -60,7 +65,7 @@ export const projectsList = [
   {
     title: "Fasady sysoly",
     img: facadySysoly,
-    skills: "Skills: React, Next.js, Styled components",
+    skills: "Skills: React, Next.js, Styled components, React-modal, React-select, Vercel",
     gitHubLink: "https://github.com/TatyanaFilippova/fasady-sysoly",
     imgList: [
       img1_fasady,
@@ -71,6 +76,14 @@ export const projectsList = [
       img6_fasady,
     ],
     link: "https://fasady-sysoly-delta.vercel.app/",
+  },
+  {
+    title: "Eva-komi",
+    img: eva_komi,
+    skills: "Skills: React, Next.js, SASS, Motion, React-modal, GraphQL, Vercel",
+    gitHubLink: "https://github.com/TatyanaFilippova/eva-komi",
+    imgList: [img1_eva, img2_eva, img3_eva, img4_eva],
+    link: "https://eva-komi.vercel.app/",
   },
   {
     title: "To-do list",

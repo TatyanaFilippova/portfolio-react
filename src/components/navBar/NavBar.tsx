@@ -21,7 +21,7 @@ const NavBar = () => {
       <div className="container_navBar">
         <div className="nav-row">
           <Link to="/" className="logo">
-            Portfolio
+            <div className="hover">Portfolio</div>
           </Link>
           <BtnDarkMode />
           <ul className="nav-list">

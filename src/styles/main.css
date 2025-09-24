@@ -29,6 +29,7 @@ font-style: normal;
   --page-bg: var(--white);
   --text-color: var(--black);
   --gray-bg: var(--gray);
+  --cart-bg: var(--black-border);
 }
 
 .dark {
@@ -36,6 +37,7 @@ font-style: normal;
   --page-bg: var(--black);
   --text-color: var(--white);
   --gray-bg: var(--dark-border);
+  --cart-bg: var(--gray);
 }
 
 * {
@@ -192,6 +194,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 60%;
 
   @media (max-width: 600px) {
     padding: 0 15px;
