@@ -15,10 +15,6 @@
 .project__img {
   height: 82%;
   object-fit: cover;
-
-  @media (max-width: 600px) {
-    width: 100%;
-  }
 }
 
 .project__title {
